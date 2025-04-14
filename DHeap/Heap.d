@@ -111,7 +111,7 @@ struct Heap(T)
         return (m_HeapType == HeapType.MIN_HEAP) ? p_Object0 < p_Object1 : p_Object0 > p_Object1;
     }
 
-    T HeapFront() const @property @safe @nogc
+    T HeapFront() @property @safe @nogc
     {
         return m_HeapData[0];
     }
